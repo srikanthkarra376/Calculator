@@ -6,10 +6,15 @@
   <title>Calculator</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
+  <link href="https://fonts.googleapis.com/css?family=Hanalei+Fill" rel="stylesheet">
  
 </head>
 <body>
   <div id="wrapper">
+
+    <div id="addition">
+      <p>+ Addition</p>
+    </div>
     <center>
       <h1>Calculator</h1>
        <form name="mycal">
@@ -20,7 +25,7 @@
                <td><input type="button" onclick="mycal.result.value +='9'" value=" 9 "></td>
                <td><input type="button" onclick="mycal.result.value +='8'" value=" 8 "></td>
                <td><input type="button" onclick="mycal.result.value +='7'" value=" 7 "></td>
-               <td><input type="button" onclick="mycal.result.value +='*'" value=" * "></td>
+               <td><input type="button" onclick="mycal.result.value +='*'" value=" x "></td>
              </tr>
              <tr>
                 <td><input type="button" onclick="mycal.result.value +='4'" value=" 4 "></td>
@@ -39,8 +44,8 @@
                     <td> <input type="button" onclick="mycal.result.value +='0'" value=" 0 "></td>
                     <td> <input type="button" onclick="mycal.result.value +='+'" value=" + "></td>
                     <td><input type="button" onclick="mycal.result.value =''" value="C"></td>
-                    </tr>
-                    <tr><td colspan="8"><input id="equalBtn" type="button" onclick="mycal.result.value =eval(mycal.result.value)" value=" = "></td></tr>
+                 </tr>
+                    <tr><td colspan="4"><input id="equalBtn" type="button" onclick="mycal.result.value =eval(mycal.result.value)" value=" = "></td></tr>
                   
            </table>
          </form> 
