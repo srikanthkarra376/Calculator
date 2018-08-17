@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Calculator</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
+ 
+</head>
+<body>
+  <div id="wrapper">
+    <center>
+      <h1>Calculator</h1>
+       <form name="mycal">
+           <input type="text" name="result">
+           
+           <table>
+             <tr>
+               <td><input type="button" onclick="mycal.result.value +='9'" value=" 9 "></td>
+               <td><input type="button" onclick="mycal.result.value +='8'" value=" 8 "></td>
+               <td><input type="button" onclick="mycal.result.value +='7'" value=" 7 "></td>
+               <td><input type="button" onclick="mycal.result.value +='*'" value=" * "></td>
+             </tr>
+             <tr>
+                <td><input type="button" onclick="mycal.result.value +='4'" value=" 4 "></td>
+                <td><input type="button" onclick="mycal.result.value +='5'" value=" 5 "></td>
+                <td><input type="button" onclick="mycal.result.value +='6'" value=" 6 "></td>
+                <td><input type="button" onclick="mycal.result.value +=' -'" value=" - "></td>
+              </tr>
+              <tr>
+                  <td> <input type="button" onclick="mycal.result.value +='1'" value=" 1 "></td>
+                  <td> <input type="button" onclick="mycal.result.value +='2'" value=" 2 "></td>
+                  <td> <input type="button" onclick="mycal.result.value +='3'" value=" 3 "></td>
+                  <td> <input type="button" onclick="mycal.result.value +='/'" value=" / "></td>
+                </tr>
+                <tr>
+                    <td> <input type="button" onclick="mycal.result.value +='.'" value="  . "></td>
+                    <td> <input type="button" onclick="mycal.result.value +='0'" value=" 0 "></td>
+                    <td> <input type="button" onclick="mycal.result.value +='+'" value=" + "></td>
+                    <td><input type="button" onclick="mycal.result.value =''" value="C"></td>
+                    </tr>
+                    <tr><td colspan="8"><input id="equalBtn" type="button" onclick="mycal.result.value =eval(mycal.result.value)" value=" = "></td></tr>
+                  
+           </table>
+         </form> 
+    </center>
+</body>
+</html>
