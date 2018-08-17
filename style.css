@@ -1,27 +1,31 @@
 body {
 
-  background: -webkit-linear-gradient(to right, #240b36, #c31432);  
-  background: linear-gradient(to right, #100516, #441d23); 
+  background-image: url("./accountant.jpeg"), linear-gradient(rgba(10,20,25,0.8),rgba(10,20,25,0.9));
+  background-blend-mode: overlay;
+  background-repeat: no-repeat;
+  background-size:cover;
+  height:100vh;
 }
 #addition {
+  z-index: -1;
   position: absolute;
-  color: rgba(34, 11, 119, 0.692);
+  color: rgba(29, 22, 53, 0.692);
   width: 150px;
   height: 80px;
   text-align: left;
   padding: 25px;
   font-size:1.5em;
   font-weight:900;
-  background-color: #fff;
   -ms-transform: rotate(20deg);
   -webkit-transform: rotate(50deg); 
   transform: rotate(-50deg);
 }
 h1 {
+  z-index:1;
   font-family: 'Hanalei Fill', cursive;
   letter-spacing:5px;
   font-size:4em; 
-  color:rgba(98, 187, 160, 0.959);
+  color:#FFEB3B;
 }
 
 input[type="button"]{
